@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #191414;
+    color:#1DB954;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+p {
+    color:#efefef;
+}
+
+#container {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-content:space-around;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:360px;
+    height:600px;
+    background-color: #191414;
+    border-radius:12px;
+    box-shadow: 5px 5px 11px #000000, -5px -5px 11px #333333;
+}
+
+.flex {
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+
+span {
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    font-size:12px;
+    padding-top:5px;
+    color:#efefef;
+}
+
+button {
+    width:25px;
+    height:25px;
+    border-radius:20px;
+    border:none;
+    background-color: #191414;
+    box-shadow: 5px 5px 11px #000000, -5px -5px 11px #333333; 
+    color:#1DB954;
+}
+
+button:active {
+background-color: #191414;
+box-shadow: inset 5px 5px 11px #000000, -5px -5px 11px #333333; 
+}
+
+#top {
+    font-size:10px;
+    text-transform: uppercase;
+    padding:30px;
+    text-align: center;
+}
+
+#artist-image {
+    text-align: center;
+    padding:5px;
+    
+}
+
+#artist-image > img {
+    border-radius:50%;
+    border:solid thin #191414;
+    box-shadow: 5px 5px 11px #000000, -4px -4px 11px #333333; 
+}
+
+#artist-details {
+    font-size: 12px;
+}
+
+div > #range {
+    width:90%;
+    margin:15px;
+}
+
+.level {
+    appearance:none;
+    -webkit-appearance: none;
+    background-color: #191414;
+    box-shadow: 5px 5px 11px #000000, -5px -5px 11px #333333; 
+    border-radius:20px;
+}
+
+.level::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #1DB954;
+    box-shadow: 2px 2px 5px #000000, -2px -2px 5px #333333; 
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
+}
+
+.bigger {
+    height:60px;
+    width:60px;
+    border-radius: 30px;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom:10px;
+}
